@@ -4,7 +4,8 @@
 <!-- Namespaces sendo utilizados para trabalhar com o JSF (prefixo h) e a biblioteca PrimeFaces (prefixo p) -->
 <html xmlns="http://www.w3.org/1999/xhtml" 
       xmlns:h="jakarta.faces.html"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="jakarta.faces.core">
     <h:head>
         <title>APS 2024/2 - CC4</title>
 
@@ -95,6 +96,7 @@
                                 class="btn"
                                 value="#{bgrClima.mensagem}"
                                 action="#{bgrClima.iniciar()}">
+                                <f:ajax execute="@form" render="temperatura" />
                             </h:commandButton>
                         </a>
                         

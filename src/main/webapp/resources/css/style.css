@@ -185,6 +185,7 @@ header.sticky .nav-bar {
 /*Home > botão "SOBRE NÓS": cor quando o usuário coloca o mouse em cima*/
 .btn:hover {
     background-color: var(--cor-hover);
+    cursor: pointer;
 }
 
 /*Home > Imagem: posição da div home-img*/
